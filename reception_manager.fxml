@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReceptionManagerController">
+    <VBox spacing="5">
+        <TextField fx:id="nameField" promptText="Name"/>
+        <TextField fx:id="ageField" promptText="Age"/>
+        <TextField fx:id="idField" promptText="ID"/>
+        <Button text="Add Patient" onAction="#addPatient"/>
+    </VBox>
+    <ListView fx:id="patientListView" prefHeight="150"/>
+    <Button text="Schedule Appointment" onAction="#scheduleAppointment"/>
+    <ListView fx:id="appointmentListView" prefHeight="150"/>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+</VBox>
